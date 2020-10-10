@@ -12,7 +12,9 @@
     "node": ">=10"
   },
   "scripts": {
-    "build": "microbundle-crl --no-compress --format modern,cjs",
+    "bhelp": "microbundle-crl build --help",
+    "build": "microbundle-crl --no-compress --format modern,es,cjs,umd && yarn dist-styles",
+    "dist-styles": "cp -r ./src/styles ./dist/styles",
     "start": "microbundle-crl watch --no-compress --format modern,cjs",
     "prepare": "run-s build",
     "test": "run-s test:unit test:lint test:build",
@@ -46,7 +48,8 @@
     "prettier": "^2.0.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.1"
+    "react-scripts": "^3.4.1",
+    "rollup-plugin-collect-sass": "^1.0.9"
   },
   "files": [
     "dist"
@@ -54,6 +57,10 @@
   "dependencies": {
     "@owczar/dashboard-style--airframe": "^0.1.23",
     "bootstrap": "^4.5.2",
+    "react-grid-layout": "^1.1.1",
+    "react-helmet": "^6.1.0",
+    "react-responsive": "^8.1.0",
+    "react-router-dom": "^5.2.0",
     "reactstrap": "^8.6.0"
   }
 }
