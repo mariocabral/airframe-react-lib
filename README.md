@@ -2,7 +2,7 @@
 
 > Based on https://github.com/0wczar/airframe-react project
 
-[![NPM](https://img.shields.io/npm/v/airframe-react-lib.svg)](https://www.npmjs.com/package/airframe-react-lib) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/airframe-react-lib.svg)](https://www.npmjs.com/package/airframe-react-lib) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![Build Status](https://travis-ci.com/mariocabral/airframe-react-lib.svg?branch=master)](https://travis-ci.com/mariocabral/airframe-react-lib)
 
 ## Install
 
