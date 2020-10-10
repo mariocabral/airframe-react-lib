@@ -57,8 +57,10 @@ class Layout extends React.Component {
             animationsDisabled: true,
 
             pageTitle: null,
-            pageDescription: config.siteDescription,
-            pageKeywords: config.siteKeywords
+            pageDescription: props.siteDescription,
+            pageKeywords: props.siteKeywords,
+            siteTitle: props.siteTitle,
+            siteCannonicalUrl: props.siteCannonicalUrl
         };
 
         this.lastLgSidebarCollapsed = false;
@@ -232,8 +234,8 @@ class Layout extends React.Component {
             >
                 <Helmet>
                     <meta charSet="utf-8" />
-                    <title>{ config.siteTitle + (this.state.pageTitle ? ` - ${this.state.pageTitle}` : '') }</title>
-                    <link rel="canonical" href={ config.siteCannonicalUrl } />
+                    <title>{ this.siteTitle + (this.state.pageTitle ? ` - ${this.state.pageTitle}` : '') }</title>
+                    <link rel="canonical" href={ this.siteCannonicalUrl } />
                     <meta name="description" content={ this.state.pageDescription } />
                     {
                         _.map(favIcons, (favIcon, index) => (
