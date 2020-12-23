@@ -27,7 +27,6 @@ const SidebarMenuItemLink = (props) =>
     )
   ) : (
     <a
-      href='javascript:;'
       className={`${props.classBase}__entry__link`}
       onClick={() => props.onToggle()}
     >
